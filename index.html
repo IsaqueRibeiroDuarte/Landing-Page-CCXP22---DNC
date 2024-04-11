@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>CCXP22</title>
+</head>
+
+<body>
+    <header>
+        <img src="/SVG/logo.svg" alt="CCXP22" class="logo">
+    </header>
+    <section id="sec1">
+        <div id="desc">
+            <h1 id="title"> REVIVA O ÉPICO </h1><br>
+            <p id="data"><strong>DE 01 A 04 DE DEZEMBRO</strong></p><br>
+            <p id="conteudo">Você consegue sentir? É aquela sensação de<br> finalmente poder falar em voz alta: "estamos<br> em casa".
+                Sim, em dezembro de 2022,<br> teremos a volta da CCXP física. Mas não será<br> qualquer CCXP, vai ser a
+                maior de todos os<br> tempos. Prepare-se para visitar seus<br> universos favoritos, explorar o Artists'
+                Valley,<br> se emocionar nos auditórios e encontrar<br> aventuras épicas a cada passo pelos nossos<br>
+                corredores.</p>
+        </div>
+        <div id="inter">
+            <div id="countdown">
+                <div class="day"></div>
+                <span class="mark">Dias</span>
+                <h1 id="dia"> 00 </h1>
+            </div>
+            <div class="hour">
+                <span class="mark">Horas</span>
+                <h1 id="hora"> 00 </h1>
+            </div>
+            <div class="minute">
+                <span class="mark">Minutos</span>
+                <h1 id="minuto"> 00 </h1>
+            </div>
+            <div class="second">
+                <span class="mark">Segundos</span>
+                <h1 id="segundo"> 00 </h1>
+            </div>
+        </div>
+        <div id="inter2">
+            <p id="aviso"><strong>PARA A MAIOR CCXP DE TODOS OS TEMPOS</strong></p>
+        </div>
+        <div class="video">
+            <video id="harleyQuinn" controls loop src="/VIDEOS/HarleyQuinn.mp4" alt="">
+        </div>
+        <div id="ingressos">
+            <div id="ing1">
+                <strong>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</strong>
+            </div>
+        </div>
+        <div id="ing2">
+            <img src="/SVG/image2.svg" onclick="selectCard('#quinta')" onmouseover="highLightCard(quinta)" onmouseout="highLightCard(quinta)" class="qui" id="quinta" alt="">
+            <img src="/SVG/image3.svg" onclick="selectCard('#sexta')" onmouseover="highLightCard(sexta)" onmouseout="highLightCard(sexta)" class="sex" id="sexta" alt="">
+            <img src="/SVG/image4.svg" onclick="selectCard('#sabado')" onmouseover="highLightCard(sabado)" onmouseout="highLightCard(sabado)" class="sab" id="sabado" alt="">
+            <img src="/SVG/image5.svg" onclick="selectCard('#domingo')" onmouseover="highLightCard(domingo)" onmouseout="highLightCard(domingo)" class="dom" id="domingo" alt="">
+        </div>
+        <button onclick="showSelectedCards()">Garanta o seu!</button>
+    </section>
+
+    <div>
+        <form action="https://www.google.com">
+            <input type="email" placeholder="Digite seu E-mail" required>
+            <input id="enviar" type="submit">
+        </form>
+    </div>
+</body>
+<script src="/JS/scripts.JS"></script>
+<script src="/JS/main.js"></script>
+</html>
